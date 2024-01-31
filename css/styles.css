@@ -137,8 +137,7 @@ body {
 
 .main-cards{
     display: grid;
-    gap: 16px;
-    margin: 20px 0px;
+    gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -147,7 +146,7 @@ body {
     flex-direction: column;
     border-radius: 30px;
     justify-content: space-around;
-    padding: 25px;
+    padding: 20px;
     color: #ffff;
     box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2);
 }
@@ -164,5 +163,15 @@ body {
 }
 
 .card:nth-child(4){
-    background-color: rgb(200, 213, 21);
+    background-color: rgb(93, 16, 141);
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-content > span {
+    font-size: 30px;
 }
