@@ -23,7 +23,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 260px 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 0.1fr;
+    grid-template-rows: 0.2fr 2fr 0.1fr;
     grid-template-areas: 
     "sidebar header header header"
     "sidebar main main main"
@@ -151,6 +151,11 @@ body {
     box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2);
 }
 
+.card:hover{
+    box-shadow: 0px 0px 8px 10px rgba(59,67,59,0.2);
+    cursor: pointer;
+}
+
 .card:first-child{
     background-color: rgb(213, 0, 0);
 }
@@ -174,4 +179,26 @@ body {
 
 .card-content > span {
     font-size: 30px;
+}
+
+.card-content > h2 {
+    font-size: 1.2rem;
+}
+
+.product{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0;
+}
+
+.product-card{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    justify-content: space-around;
+    padding: 20px;
+    color: #ffff;
+    box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2);
 }
