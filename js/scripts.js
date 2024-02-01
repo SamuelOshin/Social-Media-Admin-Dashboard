@@ -1,18 +1,18 @@
 // SideBar Toggle
 
-var openSidebar = false;
-var sidebar =  document.getElementById("sidebar");  
-function openSidebar(){   
-    if (!openSidebar) {
-        sidebar.classList.add("sidebar-responsive")
-        openSidebar = true;
+var isSidebarOpen = false;
+var sidebar = document.getElementById("sidebar");
+
+function openSidebar() {
+    if (!isSidebarOpen) {
+        sidebar.classList.add("sidebar-responsive");
+        isSidebarOpen = true;
     }
 }
 
-function  closeSidebar() {
-    if  (openSidebar){
+function closeSidebar() {
+    if (isSidebarOpen) {
         sidebar.classList.remove("sidebar-responsive");
-        openSidebar = false;
-    }           
+        isSidebarOpen = false;
     }
-        
+}
